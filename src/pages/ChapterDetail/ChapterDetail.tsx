@@ -14,11 +14,11 @@ export default function Overview() {
         {chapters.map((name, idx) => (
           <div
             key={idx}
-            className="border rounded-xl flex items-center px-6 py-6 text-lg text-gray-500 font-medium"
+            className="border rounded-xl flex items-center justify-center px-6 py-6 text-lg lg:text-2xl text-gray-500 font-medium text-[10px]"
           >
-            <span className="text-2xl font-bold text-gray-400 mr-4">
+            {/* <span className="text-[10px] lg:text-2xl font-bold text-gray-400 mr-4">
               {idx + 1}
-            </span>
+            </span> */}
             {name}
           </div>
         ))}

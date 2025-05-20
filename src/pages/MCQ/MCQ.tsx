@@ -61,7 +61,7 @@ const MCQ = () => {
                   <span className="text-green-600">01</span>
                   <span className="text-red-600">01</span>
                 </div>
-                <div className="text-gray-700">
+                <div className="text-gray-700 text-[10px]">
                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </div>
               </div>

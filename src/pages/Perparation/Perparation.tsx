@@ -6,9 +6,9 @@ import MenuBookIcon from "@mui/icons-material/MenuBook";
 export default function Perparation() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
-      <div className="flex flex-1 mt-10">
+      <div className="flex flex-1 mt-20 lg:mt-10">
         {/* Main Content */}
-        <main className="flex-1 p-8">
+        <main className="flex-1 lg:p-8">
           {/* Subject Card */}
           <div className="bg-indigo-400 rounded-xl p-6 text-white flex items-center justify-between mb-6 relative">
             <div>

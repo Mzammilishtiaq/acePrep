@@ -18,7 +18,7 @@ const subjects = [
 export default function UserDashboard() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
-      <div className="flex flex-1">
+      <div className="flex flex-1 mt-10 lg:mt-0 xl:mt-0">
         {/* Main Content */}
         <main className="flex-1 p-8">
           {/* Welcome Card */}
@@ -31,9 +31,9 @@ export default function UserDashboard() {
             <div className="flex flex-col items-center">
               <CircularProgress
                 variant="determinate"
-                value={5}
+                value={10}
                 size={60}
-                thickness={5}
+                thickness={6}
                 sx={{ color: "white" }}
               />
               <div className="text-sm mt-2">Total Preparation</div>
@@ -68,8 +68,8 @@ export default function UserDashboard() {
 function SubjectCard({ name, progress, icon }:any) {
   return (
     <div className="border rounded-xl p-4 flex flex-col items-start gap-2 min-h-[110px]">
-      <div className="text-3xl">{icon}</div>
-      <div className="font-semibold">{name}</div>
+      <div className="text-xl lg:text-3xl">{icon}</div>
+      <div className="font-semibold text-[10px]">{name}</div>
       <div className="w-full">
         <LinearProgress
           variant="determinate"

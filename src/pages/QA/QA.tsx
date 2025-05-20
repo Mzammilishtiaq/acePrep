@@ -37,7 +37,7 @@ export default function QA() {
                 <div className="text-xs text-[#8d8cf8] mt-2">01</div>
               </div>
               <div className="flex-1">
-                <div className="text-base">
+                <div className="text-base text-[10px]">
                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </div>
               </div>
@@ -50,21 +50,21 @@ export default function QA() {
           {/* Answer Card */}
           <div className="bg-white rounded-xl border p-6 mb-6">
             <div className="font-semibold text-[#8d8cf8] mb-2">Answer</div>
-            <div className="text-sm mb-6">
+            <div className="lg:text-sm text-[10px] mb-6">
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </div>
             <div className="flex gap-4">
               <Button
                 variant="contained"
                 startIcon={<CloseIcon />}
-                className="!bg-[#f9b26b] !text-white !rounded-lg !px-8"
+                className="!bg-[#f9b26b] !text-white !rounded-lg !text-[10px] lg:text-sm !px-4 lg:px-8"
               >
                 I don't know this
               </Button>
               <Button
                 variant="contained"
                 startIcon={<CheckIcon />}
-                className="!bg-[#4caf50] !text-white !rounded-lg !px-8"
+                className="!bg-[#4caf50] !text-white !rounded-lg lg:text-sm !text-[10px] lg:!px-8 !px-4"
               >
                 I know this
               </Button>

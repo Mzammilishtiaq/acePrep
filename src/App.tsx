@@ -21,6 +21,7 @@ function App() {
         <Route path="/editprofile" element={<EditProfile />} />
 
         <Route path="/" element={<HomeContainer/>} >
+        <Route path="" element={<Home />} />
         <Route path="/dashboard" element={<Home />} />
         <Route path="/subjectdetail" element={<SubjectDetail />} />
         <Route path="/perparation" element={<Perparation />} />

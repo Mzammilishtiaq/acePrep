@@ -1,51 +1,13 @@
-import React from "react";
-import { Button, Avatar, LinearProgress, CircularProgress } from "@mui/material";
-import DownloadIcon from "@mui/icons-material/Download";
-import HomeIcon from "@mui/icons-material/Home";
-import BarChartIcon from "@mui/icons-material/BarChart";
-import PersonIcon from "@mui/icons-material/Person";
+import { Button,  LinearProgress, CircularProgress } from "@mui/material";
 
 export default function WordPage() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
-      {/* Header */}
-      <header className="flex items-center justify-between px-8 py-4 border-b bg-white">
-        <div className="text-3xl font-bold text-indigo-400">AcePrep</div>
-        <div className="flex items-center gap-6">
-          <Button
-            variant="outlined"
-            startIcon={<DownloadIcon />}
-            className="!rounded-full !border-indigo-300 !text-indigo-400 !px-6"
-          >
-            Download App
-          </Button>
-          <Avatar src="https://randomuser.me/api/portraits/women/44.jpg" />
-        </div>
-      </header>
-
       <div className="flex flex-1">
-        {/* Sidebar */}
-        <aside className="w-64 bg-white border-r flex flex-col py-8 px-4">
-          <nav className="flex flex-col gap-4">
-            <div className="flex items-center gap-3 text-lg font-medium text-gray-700 bg-gray-100 rounded-xl px-4 py-3">
-              <HomeIcon />
-              Home
-            </div>
-            <div className="flex items-center gap-3 text-lg text-gray-600 px-4 py-3 hover:bg-gray-100 rounded-xl cursor-pointer">
-              <BarChartIcon />
-              Statistics
-            </div>
-            <div className="flex items-center gap-3 text-lg text-gray-600 px-4 py-3 hover:bg-gray-100 rounded-xl cursor-pointer">
-              <PersonIcon />
-              Profile
-            </div>
-          </nav>
-        </aside>
-
         {/* Main Content */}
-        <main className="flex-1 p-8">
+        <main className="flex-1 lg:p-8 lg:mt-10 mt-20">
           {/* Chapter Card */}
-          <div className="bg-indigo-400 rounded-2xl p-6 mb-8 text-white relative flex items-center justify-between">
+          <div className="bg-indigo-400 rounded-2xl p-6 mb-8 text-white relative flex items-center justify-between m-1 lg:m-0">
             <div>
               <div className="text-2xl font-bold">Chapter Name</div>
               <div className="text-sm mt-2">
@@ -66,8 +28,8 @@ export default function WordPage() {
           </div>
 
           {/* Word Card */}
-          <div className="bg-white rounded-2xl border p-8 mb-8">
-            <div className="flex items-center gap-8 mb-6">
+          <div className="bg-white rounded-2xl border p-1 m-1 lg:p-8 mb-8">
+            <div className="flex gap-2 items-center lg:gap-8 mb-6">
               <div className="flex flex-col items-center">
                 <div className="w-16 h-16 rounded-full border-4 border-gray-200 flex items-center justify-center text-3xl font-bold text-gray-500">
                   1
@@ -75,9 +37,9 @@ export default function WordPage() {
                 <span className="text-xs text-green-600 mt-2">01</span>
               </div>
               <div className="flex-1">
-                <div className="text-2xl font-semibold">Reprehenderit</div>
+                <div className="lg:text-2xl text-[10px] font-semibold">Reprehenderit</div>
               </div>
-              <div className="flex flex-col items-end">
+              <div className="flex flex-col gap-1 items-end">
                 <LinearProgress
                   variant="determinate"
                   value={5}
@@ -108,7 +70,9 @@ export default function WordPage() {
               <Button
                 variant="contained"
                 color="warning"
-                className="!rounded-full !px-8"
+                className="!rounded-full !px-8 
+                
+                !text-[10px]"
                 startIcon={<span>✗</span>}
               >
                 I don't know this
@@ -116,7 +80,7 @@ export default function WordPage() {
               <Button
                 variant="contained"
                 color="success"
-                className="!rounded-full !px-8"
+                className="!rounded-full !px-8 !text-[10px]"
                 startIcon={<span>✓</span>}
               >
                 I know this

@@ -8,7 +8,7 @@ export default function SubjectDetail() {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <div className="flex flex-1">
         {/* Main Content */}
-        <main className="flex-1 p-8 mt-10">
+        <main className="flex-1 p-0 lg:p-8 mt-16 lg:mt-10">
           {/* Subject Card */}
           <Paper elevation={3} className="p-6 rounded-2xl bg-indigo-400 text-white mb-6 relative">
             <div className="text-2xl font-bold">Subject Name</div>
@@ -55,16 +55,16 @@ export default function SubjectDetail() {
             <div className="text-indigo-500 font-semibold mb-4">Overview</div>
             <div className="flex gap-6">
               <Paper className="flex-1 flex flex-col items-center justify-center p-6 border border-indigo-200 rounded-lg cursor-pointer hover:shadow-md transition">
-                <MenuBookIcon fontSize="large" className="mb-2 text-indigo-400" />
-                <div className="font-semibold text-gray-700">By Book</div>
+                <MenuBookIcon className="mb-2 text-indigo-400 !text-2xl" />
+                <div className="font-semibold text-gray-700 text-[10px]">By Book</div>
               </Paper>
               <Paper className="flex-1 flex flex-col items-center justify-center p-6 border border-indigo-200 rounded-lg cursor-pointer hover:shadow-md transition">
-                <DescriptionIcon fontSize="large" className="mb-2 text-indigo-400" />
-                <div className="font-semibold text-gray-700">Past Papers</div>
+                <DescriptionIcon  className="mb-2 text-indigo-400 !text-2xl" />
+                <div className="font-semibold text-gray-700 text-[10px]">Past Papers</div>
               </Paper>
               <Paper className="flex-1 flex flex-col items-center justify-center p-6 border border-indigo-200 rounded-lg cursor-pointer hover:shadow-md transition">
-                <MemoryIcon fontSize="large" className="mb-2 text-indigo-400" />
-                <div className="font-semibold text-gray-700">AI Based Paper</div>
+                <MemoryIcon  className="mb-2 text-indigo-400 !text-2xl" />
+                <div className="font-semibold text-gray-700 text-[10px]">AI Based Paper</div>
               </Paper>
             </div>
             <div className="mt-4 text-xs text-gray-400 cursor-pointer">&lt; Back</div>
